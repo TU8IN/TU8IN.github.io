@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  background-size: 100% 100vh;
+}
+
+.bgvideo {
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-blend-mode: screen;
+  background-size: 100% 100vh;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100vh;
+}
+
+.heading-container {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  animation: fade-in 4s;
+  background-size: 100% 100vh;
+  font-size: 10em !important;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 767px) {
+  .heading-container {
+    font-size: 6em !important; /* Adjust the font size as per your preference */
+  }
+}
+
+h1 {
+  padding-top: 10%;
+  color: #fdfdfd;
+  font-size: 7rem;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 3px 3px 3px #145DA0;
+  background-size: 100% 50vh;
+}
+
+.side-menu-container {
+  top: 0;
+  position: absolute;
+  height: 100%;
+}
+
+.side-menu-items {
+  position: fixed;
+  height: 100%;
+  width: 120px; /* Adjust the width as per your preference */
+  font-size: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #145DA0;
+  
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Orbitron', sans-serif;
+  background-image: #010102;
+  padding-top: 40px;
+}
+
+.side-menu-item a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.side-menu-logo {
+  position: absolute;
+  z-index: 2;
+}
+
+.side-menu-item a:hover {
+  background-color: #429FDD;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  bottom: 10%;
+  left: 2%;
+}
+
+.btn {
+  margin-left: 8px;
+  background-color: #00050800;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row {
+  position: relative;
+  left: 12%;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
