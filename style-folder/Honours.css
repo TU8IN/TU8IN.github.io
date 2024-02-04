@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  background-image: url("../space.gif");
+  background-size: 100% 100vh;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  font-size: 25px;
+}
+
+.side-menu-container {
+  top: 0;
+  position: absolute;
+  height: 100%;
+}
+
+.side-menu-container {
+  top: 0;
+  position: absolute;
+  height: 100%;
+}
+
+.side-menu-items {
+  position: fixed;
+  height: 100%;
+  width: 120px; /* Adjust the width as per your preference */
+  font-size: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #145DA0;
+  
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Orbitron', sans-serif;
+  background-image: #010102;
+  padding-top: 40px;
+}
+
+.side-menu-item a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.side-menu-logo {
+  position: absolute;
+  z-index: 2;
+}
+
+.side-menu-item a:hover {
+  background-color: #429FDD;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  bottom: 130px;
+  left: 15px;
+}
+
+.btn {
+  margin-left: 8px;
+  background-color: #00050800;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row {
+  position: relative;
+  left: 192px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.center {
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+.word {
+  color: white;
+  opacity: 0;
+  font-family: 'Courgette';
+  font-size: 20px;
+  animation: fade-in 2s;
+}
+
+
+
+.words2 {
+  color: white;
+  opacity: 0;
+  font-family: 'Courgette';
+  animation: fade-in 6s;
+  animation-fill-mode: forwards;
+}
+
+.word{
+  color: white;
+  opacity: 0;
+
+  font-family: 'Courgette';
+  animation: fade-in 0.75s;
+  animation-fill-mode: forwards;
+
+}
+
+.words1{
+  color: white;
+  opacity: 0;
+  font-family: 'Courgette';
+
+  animation: fade-in 0.75s;
+  animation-delay: 0.75s;
+  animation-fill-mode: forwards;
+
+}
+
+
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

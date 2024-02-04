@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    background-image: url("../space.gif");
+    background-size: 100% 100vh;
+}
+
+.word {
+    color: white;
+    font-family: 'Courgette';
+    animation: fade-in 5s;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    font-size: 25px;
+}
+
+.side-menu-container {
+    top: 0;
+    position: absolute;
+    height: 100%;
+}
+
+.side-menu-container {
+    top: 0;
+    position: absolute;
+    height: 100%;
+}
+
+.side-menu-items {
+  position: fixed;
+  height: 100%;
+  width: 120px; /* Adjust the width as per your preference */
+  font-size: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #145DA0;
+  
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Orbitron', sans-serif;
+  background-image: #010102;
+  padding-top: 40px;
+}
+.side-menu-item a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.side-menu-logo {
+    position: absolute;
+    z-index: 2;
+}
+
+.side-menu-item a:hover {
+    background-color: #429FDD;
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    bottom: 130px;
+    left: 15px;
+}
+
+.btn {
+    margin-left: 8px;
+    background-color: #00050800;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row {
+    position: relative;
+    left: 192px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.center {
+    color: white;
+    font-family: 'Courgette';
+}
+
+
+
+/* ANIMATION FOR SKILLLS */
+#chart1 {
+    background: rgba(255, 0, 0, 0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 0px;
+    position: relative;
+}
+
+#chart1 span {
+    /* You can modify the value below to change the distance between the percentage number and the bar */
+    margin-left: 5px;
+    color: #f5f5f5;
+    font-weight: bolder;
+}
+
+#chart2 {
+    background: rgba(255, 0, 0, 0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 0px;
+    position: relative;
+}
+
+#chart2 span {
+    /* You can modify the value below to change the distance between the percentage number and the bar */
+    margin-left: 5px;
+    color: #f5f5f5;
+    font-weight: bolder;
+}
+
+#chart3 {
+    background: rgba(255, 0, 0, 0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 0px;
+    position: relative;
+}
+
+#chart3 span {
+    /* You can modify the value below to change the distance between the percentage number and the bar */
+    margin-left: 5px;
+    color: #f5f5f5;
+    font-weight: bolder;
+}
+
+#chart4 {
+    background: rgba(255, 0, 0, 0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 0px;
+    position: relative;
+}
+
+#chart4 span {
+    /* You can modify the value below to change the distance between the percentage number and the bar */
+    margin-left: 5px;
+    color: #f5f5f5;
+    font-weight: bolder;
+}
+
+#chart5 {
+    background: rgba(255, 0, 0, 0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 0px;
+    position: relative;
+}
+
+#chart5 span {
+    /* You can modify the value below to change the distance between the percentage number and the bar */
+    margin-left: 5px;
+    color: #f5f5f5;
+    font-weight: bolder;
+}
+
+
+.bar {
+    /* You can modify the total time used for the animation here */
+    animation: load 6s normal forwards;
+    /* 
+        Add a little spice by having a shadow below the bar.
+        Feel free to comment out this line below to have an even LITE version :D 
+        */
+    box-shadow: 0 10px 40px -10px #ffffff;
+
+    border-radius: 100px;
+    background: #145DA0;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        /* You need to change the percentage below to match the value in the corresponding <span> */
+        width: 100%;
+    }
+}
+
+
+.center {
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    padding-top: 5em;
+}
+
+.words0 {
+    color: white;
+    opacity: 0;
+
+    font-family: 'Courgette';
+    animation: fade-in 0.75s;
+    animation-fill-mode: forwards;
+
+}
+
+.words1 {
+    color: white;
+    opacity: 0;
+    font-family: 'Courgette';
+
+    animation: fade-in 0.75s;
+    animation-delay: 0.75s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
